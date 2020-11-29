@@ -1,0 +1,102 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1, p {font-family: interstate, sans-serif;
+font-weight: 700;
+font-style: italic;
+color: #908991;
+}
+
+h2, h3 {font-family: interstate, sans-serif;
+font-weight: 900;
+font-style: italic;
+color: #908991;
+}
+
+h1 {
+  font-size: 5vw;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3, p{
+  font-size: 2rem;
+}
+
+.container {
+  width: 75vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.move-instructions {
+  display: flex;
+}
+
+.wasd-container {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 8px;
+  row-gap: 4px;
+  margin: 0 1rem;
+}
+
+.wasd-item {
+  border: 4px solid #908991;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 8px;
+  padding: 0 8px;
+}
+
+.w-key {
+  grid-column: 2 / 3;
+}
+
+.a-key {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.s-key {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+
+.d-key {
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.tracklist {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.trackitem {
+  border: 4px solid #908991;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 8px;
+  padding: 0 8px;
+}
+
+.trackitem:hover{
+  background-color: #ffffff;
+  opacity: 0.25;
+}
+
+.smaller-text {
+  font-size: 1.5rem;
+}
